@@ -16,11 +16,6 @@ namespace MultiShop.Order.WebApi.Controllers
         private readonly UpdateOrderDetailCommandHandler _updateOrderDetailCommandHandler;
         private readonly RemoveOrderDetailCommandHandler _removeOrderDetailCommandHandler;
 
-        public OrderDetailsController(GetOrderDetailQueryHandler getOrderDetailQueryHandler)
-        {
-            _getOrderDetailQueryHandler = getOrderDetailQueryHandler;
-        }
-
         public OrderDetailsController(GetOrderDetailQueryHandler getOrderDetailQueryHandler,
             GetOrderDetailByIdQueryHandler getOrderDetailByIdQueryHandler,
             CreateOrderDetailCommandHandler createOrderDetailCommandHandler,
